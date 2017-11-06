@@ -12,8 +12,8 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
-from decouple import config
-from dj_database_url import  parse as dburl
+from decouple import config, Csv
+from dj_database_url import parse as dburl
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -28,8 +28,8 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default=False, cast=bool)
 
 # Permite que a aplicação responda de qualquer dominio (para funcionar no Heroku)
-ALLOWED_HOSTS = ['*']
-
+#ALLOWED_HOSTS = ['127.0.0.1', '.localhost', '.herokuapp.com']
+ALLOWED_HOSTS = config('ALLOWED_HOSTS', default=[], cast=Csv())
 
 # Application definition
 
