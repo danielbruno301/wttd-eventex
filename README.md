@@ -2,16 +2,13 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/4996c69271b349e4a682/maintainability)](https://codeclimate.com/github/danielbruno301/wttd-eventex/maintainability)
 
-This project aims to exercise Python and Django skills applying TDD as development methodology
+This project aims to improve Python and Django skills applying TDD as development methodology
 
 System for a Conference commissioned by a pseudo-client akka Morena.
 
 Use libraries as:
 
-dj-database-url - 0.4.2
-dj-static - 0.0.6
-python-decouple - 3.1
-gunicorn - 19.4.1
+dj-database-url | dj-static | python-decouple | gunicorn 
 
 
 ## How to develop
