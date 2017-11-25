@@ -30,7 +30,7 @@
             .alert p {
                 padding: 7px 0 7px;
             }
-            .alert .success {
+            .alert.success {
                 color: #3c763d;
                 background-color: #dff0d8;
                 border-color: #d0e9c6;
@@ -74,7 +74,7 @@
                             </div>
                         {% endfor %}
                     {% endif %}
-                    <form action="." method="post">
+                    <form action="." novalidate method="post">
                         {% csrf_token %}
                         <div class="form-row label-block input-text">
                             <label for="{{ form.name.id_for_label }}">{{ form.name.label }}</label>
