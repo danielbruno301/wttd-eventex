@@ -26,7 +26,6 @@ cd wttd
 python -m venv .wttd
 source .wttd/bin/activate
 pip install -r requirements.txt
-#Set your .env file
 cp contrib/env-sample .env
 python manage.py test
 ```
@@ -43,8 +42,7 @@ python manage.py test
 ```console
 heroku create myinstance
 heroku config:push
-#Put your secret key in 'your key'
-heroku config:set SECRET_KEY=`your key`
+heroku config:set SECRET_KEY=`python contrib/secret_gen.py`
 heroku config:set DEBUG=False
 #Configure your email
 git push heroku master --force
