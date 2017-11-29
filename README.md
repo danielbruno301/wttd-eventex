@@ -1,6 +1,9 @@
 # Eventex
 
+[![Build Status](https://travis-ci.org/danielbruno301/wttd-eventex.svg?branch=master)](https://travis-ci.org/danielbruno301/wttd-eventex)
+[![Code Health](https://landscape.io/github/danielbruno301/wttd-eventex/master/landscape.svg?style=flat)](https://landscape.io/github/danielbruno301/wttd-eventex/master)
 [![Maintainability](https://api.codeclimate.com/v1/badges/4996c69271b349e4a682/maintainability)](https://codeclimate.com/github/danielbruno301/wttd-eventex/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/4996c69271b349e4a682/test_coverage)](https://codeclimate.com/github/danielbruno301/wttd-eventex/test_coverage)
 
 This project aims to improve Python and Django skills applying TDD as development methodology
 
